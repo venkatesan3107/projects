@@ -1,0 +1,201 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C63EDD3F246_v1_sub_sentimentminus_signanalysis_Create.Bundle;assembly=C63EDD3F246_v1_sub_s.YF7AtOZFtE1piN0D4ObJkC3" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C63EDD3F246_v1_sub_sentimentminus_signanalysis_Create.Bundle</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>C63EDD3F246_v1_sub_s.YF7AtOZFtE1piN0D4ObJkC3</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="885.2,757.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Data" />
+      <Variable x:TypeArguments="uiascb:v1_sub_sentimentminus_signanalysis_Create" Name="sentimentAnalysis">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ConnectorActivity_2</x:String>
+            <x:String x:Key="SourcePropertyName">Jit_v1_sub_sentimentminus_signanalysis</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="overallSentiment">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ConnectorActivity_2</x:String>
+            <x:String x:Key="SourcePropertyName">out_sentimentAnalysis_sub_overallSentimentStr</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_Data]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="451.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\venka\Downloads\sample.xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="451.2,614.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,441.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACs1W728iNxD9V6z9WO3twSWlKlI+wJK0XHMHus1d1Z4iZHYHcDH21h6T0Cj/e8f7i6QLJN9SIQH2zo7fe/M89kNwJUBmNtYKuVBggv5DkAA36YrPJZQPg/732zAYq9xhM/EQfOYbCPoBwj0GYTASNpd8V03eVJNgUyNyFFr5yRUwH81Qszkwrrjc/QMZW2jDLCgUG/qit252uc9h0Qi1pHGiDU5M5rF1w+AL/O2EgSzoo3EQlvivdcqrVYY62wWPhHfi8CDgZqmBB2CFjfQWDJcyqR8kaFqMJmUMa4Ja9CoJLUPi2SzCbKqNJ5sxyecgX+RHScWS8j08llzBYtBfcGmJ6xewuVYWau71OHaG43FJSiVopYmKudpyWwY+hic0aWaGBvg603fqkCqNGqwJO6CLU2iZXrBcW4FiCyFTsOT1P4ckbFgohBq5ZBaJjE9qT4v14U0FSrVaiAxUCtewLer6XJq4ec6agNZ2qJzH9smY9MFeLW8jXq22F0IohCWxf6bEGVHSZsOxDOidB28qzRp205XhFix55vsPty1tfoMdqyJasgxYWWsvASVieRnHvDwoFoIahlD/2WO1TNFpw5z/b3bXk7o+V6aOaMkyAmouksjDPYWrYvHaJW0hTuvw45tyd4pAoFZH3fG1CWipkLg5SmD7FCwDhBT3pigOmDuBKz8SholNztMXTpXeG/nio8DZttvvNxq9O+qLfaM96pA9x69iynEVjX2rIIj0OAGzFSlEg5S6LvVgsFHy+yWlLP7GvbPL0ejs6sN5j/DMrJvPGkgboZydeXFqbLOYWj1CNKQqSIhe/ULIDq0T/XH10wAnf17hZTcXnzuj88n84zo+C9k3MJagX3Sjjv/Q606iM3DRHBlTN5cipWZyo9egLpSTvsu+VL5X1okuPJYKVERXlbslc4wVHU/Up6fcUGWQMPobU4WVshVoKRm1f0XG1Ibg0bQTOZXkXfXDhcnWFFSVY1fVrTYUQZn/RS9XtT9qkV8R80+AK00Ag6kmzgTQM5OC7lV18lMOinm6AhJDr13+jUvSrdwC5fzQ6DsLZkyncTU/NWLDzY44VZfCKU/XfAlP+Xd7zwWod3VhSvYLqMGY7X34NPJpll4n+rkR4hV74XWKTXI6b+t7SeHKloyT5IbmPFYavd923x9MdM3V0hFxigF/5fnE76c0TEh4uph0OpSV2+JORN0mXlG0l7ZypL8dD6VO14WIj/8CCMw7joQLAAA=" ConnectionId="1b5c460a-8b46-4f74-800a-ee63edd3f246" DisplayName="Sentiment Analysis" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="ConnectorActivity_2" UiPathActivityTypeId="2141cadf-6675-3876-bd1f-14adadee2c79">
+              <isactr:ConnectorActivity.FieldObjects>
+                <isactr:FieldObject Name="text" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_sentimentAnalysis_sub_overallSentimentStr" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String">[OverallSentiment]</OutArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_sentimentAnalysis_sub_sentimentBreakdownStr" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_sentimentAnalysis_sub_confidenceLevel" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="s:Nullable(x:Int64)" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_sentimentAnalysis_sub_keyPhrasesStr_array" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="s:String[]" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_sentimentAnalysis_sub_analysis" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_sentimentAnalysis_sub_undertonesStr_array" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="s:String[]" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="Jit_v1_sub_sentimentminus_signanalysis" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="uiascb:v1_sub_sentimentminus_signanalysis_Create">[sentimentAnalysis]</OutArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+              </isactr:ConnectorActivity.FieldObjects>
+            </isactr:ConnectorActivity>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[CurrentRow(0).ToString+&quot;-&quot;+OverallSentiment]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
